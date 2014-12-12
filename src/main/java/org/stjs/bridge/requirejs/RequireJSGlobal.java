@@ -12,16 +12,9 @@ public final class RequireJSGlobal {
 		//static only
 	}
 
-	public static final RequireJS require = new RequireJS();
+	public static final RequireJSNamespace require = new RequireJSNamespace();
 
 	public static native void define(Function0<?> moduleConstructor);
-
-	public static native void define(String moduleName, Array<String> dependencies, Function<?> moduleConstructor);
-	public static native void define(String moduleName, Array<String> dependencies, Function0<?> moduleConstructor);
-	public static native void define(String moduleName, Array<String> dependencies, Function1<?, ?> moduleConstructor);
-	public static native void define(String moduleName, Array<String> dependencies, Function2<?, ?, ?> moduleConstructor);
-	public static native void define(String moduleName, Array<String> dependencies, Function3<?, ?, ?, ?> moduleConstructor);
-	public static native void define(String moduleName, Array<String> dependencies, Function4<?, ?, ?, ?, ?> moduleConstructor);
 
 	public static native void define(Array<String> dependencies, Function<?> moduleConstructor);
 	public static native void define(Array<String> dependencies, Function0<?> moduleConstructor);
@@ -29,6 +22,13 @@ public final class RequireJSGlobal {
 	public static native void define(Array<String> dependencies, Function2<?, ?, ?> moduleConstructor);
 	public static native void define(Array<String> dependencies, Function3<?, ?, ?, ?> moduleConstructor);
 	public static native void define(Array<String> dependencies, Function4<?, ?, ?, ?, ?> moduleConstructor);
+
+	public static native void define(String moduleName, Array<String> dependencies, Function<?> moduleConstructor);
+	public static native void define(String moduleName, Array<String> dependencies, Function0<?> moduleConstructor);
+	public static native void define(String moduleName, Array<String> dependencies, Function1<?, ?> moduleConstructor);
+	public static native void define(String moduleName, Array<String> dependencies, Function2<?, ?, ?> moduleConstructor);
+	public static native void define(String moduleName, Array<String> dependencies, Function3<?, ?, ?, ?> moduleConstructor);
+	public static native void define(String moduleName, Array<String> dependencies, Function4<?, ?, ?, ?, ?> moduleConstructor);
 
 	public static native void require(Callback0 moduleConstructor);
 

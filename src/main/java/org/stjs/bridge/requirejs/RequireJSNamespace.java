@@ -5,10 +5,12 @@ import org.stjs.javascript.annotation.SyntheticType;
 
 @STJSBridge
 @SyntheticType
-public final class RequireJS {
-	RequireJS() {
+public final class RequireJSNamespace {
+	RequireJSNamespace() {
 		//
 	}
 
 	public native void config(RequireJSConfig config);
+
+	public native void undef(String moduleName);
 }
