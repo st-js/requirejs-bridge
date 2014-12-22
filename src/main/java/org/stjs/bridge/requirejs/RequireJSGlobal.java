@@ -32,11 +32,18 @@ public final class RequireJSGlobal {
 
 	public static native void require(Callback0 moduleConstructor);
 
-	public static native void require(Array<String> dependencies, Callback moduleConstructor);
-	public static native void require(Array<String> dependencies, Callback0 moduleConstructor);
-	public static native void require(Array<String> dependencies, Callback1<?> moduleConstructor);
-	public static native void require(Array<String> dependencies, Callback2<?, ?> moduleConstructor);
-	public static native void require(Array<String> dependencies, Callback3<?, ?, ?> moduleConstructor);
-	public static native void require(Array<String> dependencies, Callback4<?, ?, ?, ?> moduleConstructor);
+	public static native void require(Array<String> dependencies, Callback onSuccess);
+	public static native void require(Array<String> dependencies, Callback0 onSuccess);
+	public static native void require(Array<String> dependencies, Callback1<?> onSuccess);
+	public static native void require(Array<String> dependencies, Callback2<?, ?> onSuccess);
+	public static native void require(Array<String> dependencies, Callback3<?, ?, ?> onSuccess);
+	public static native void require(Array<String> dependencies, Callback4<?, ?, ?, ?> onSuccess);
+
+	public static native void require(Array<String> dependencies, Callback onSuccess, Callback1<RequireJSError> onError);
+	public static native void require(Array<String> dependencies, Callback0 onSuccess, Callback1<RequireJSError> onError);
+	public static native void require(Array<String> dependencies, Callback1<?> onSuccess, Callback1<RequireJSError> onError);
+	public static native void require(Array<String> dependencies, Callback2<?, ?> onSuccess, Callback1<RequireJSError> onError);
+	public static native void require(Array<String> dependencies, Callback3<?, ?, ?> onSuccess, Callback1<RequireJSError> onError);
+	public static native void require(Array<String> dependencies, Callback4<?, ?, ?, ?> onSuccess, Callback1<RequireJSError> onError);
 
 }
