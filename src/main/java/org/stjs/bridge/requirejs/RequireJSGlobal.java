@@ -5,7 +5,6 @@ import org.stjs.javascript.annotation.GlobalScope;
 import org.stjs.javascript.annotation.STJSBridge;
 import org.stjs.javascript.functions.*;
 
-@STJSBridge
 @GlobalScope
 public final class RequireJSGlobal {
 	private RequireJSGlobal() {
@@ -30,7 +29,7 @@ public final class RequireJSGlobal {
 	public static native void define(String moduleName, Array<String> dependencies, Function3<?, ?, ?, ?> moduleConstructor);
 	public static native void define(String moduleName, Array<String> dependencies, Function4<?, ?, ?, ?, ?> moduleConstructor);
 
-	public static native void require(String moduleName);
+	public static native Object require(String moduleName);
 
 	public static native void require(Array<String> dependencies, Callback onSuccess);
 	public static native void require(Array<String> dependencies, Callback0 onSuccess);

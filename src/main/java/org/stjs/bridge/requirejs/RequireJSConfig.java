@@ -7,7 +7,6 @@ import org.stjs.javascript.annotation.STJSBridge;
 import org.stjs.javascript.annotation.SyntheticType;
 import org.stjs.javascript.functions.Callback;
 
-@STJSBridge
 @GlobalScope
 @SyntheticType
 public class RequireJSConfig {
