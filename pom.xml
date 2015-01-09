@@ -4,7 +4,7 @@
 
 	<groupId>org.st-js.bridge</groupId>
 	<artifactId>requirejs</artifactId>
-	<version>2.1.15.bv4-SNAPSHOT</version>
+	<version>2.1.15.bv4</version>
 	<packaging>jar</packaging>
 	<name>Strongly-typed JS - Require JS Bridge Library</name>
 
@@ -44,7 +44,7 @@
 		<connection>scm:git:https://github.com/st-js/requirejs-bridge.git</connection>
 		<developerConnection>scm:git:https://github.com/st-js/requirejs-bridge.git</developerConnection>
 		<url>scm:git:https://github.com/st-js/requirejs-bridge</url>
-	  <tag>HEAD</tag>
+	  <tag>requirejs-2.1.15.bv4</tag>
   	</scm>
 
 </project>
