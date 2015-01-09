@@ -30,7 +30,7 @@ public final class RequireJSGlobal {
 	public static native void define(String moduleName, Array<String> dependencies, Function3<?, ?, ?, ?> moduleConstructor);
 	public static native void define(String moduleName, Array<String> dependencies, Function4<?, ?, ?, ?, ?> moduleConstructor);
 
-	public static native void require(Callback0 moduleConstructor);
+	public static native void require(String moduleName);
 
 	public static native void require(Array<String> dependencies, Callback onSuccess);
 	public static native void require(Array<String> dependencies, Callback0 onSuccess);
