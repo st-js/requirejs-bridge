@@ -2,7 +2,6 @@ package org.stjs.bridge.requirejs;
 
 import org.stjs.javascript.Array;
 import org.stjs.javascript.annotation.GlobalScope;
-import org.stjs.javascript.annotation.STJSBridge;
 import org.stjs.javascript.functions.*;
 
 @GlobalScope
@@ -11,8 +10,11 @@ public final class RequireJSGlobal {
 		//static only
 	}
 
+	public static final RequireJSNamespace requirejs = new RequireJSNamespace();
+
 	public static final RequireJSNamespace require = new RequireJSNamespace();
 
+	public static native void define(RequireJSPlugin plugin);
 	public static native void define(Function0<?> moduleConstructor);
 
 	public static native void define(Array<String> dependencies, Function<?> moduleConstructor);
