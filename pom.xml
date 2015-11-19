@@ -4,47 +4,39 @@
 
 	<groupId>org.st-js.bridge</groupId>
 	<artifactId>requirejs</artifactId>
-	<version>2.1.15.bv5-SNAPSHOT</version>
+	<version>2.1.20.bv1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>Strongly-typed JS - Require JS Bridge Library</name>
 
 	<parent>
 		<groupId>org.st-js.bridge</groupId>
 		<artifactId>parent-pom</artifactId>
-		<version>1.0.1</version>
+		<version>1.0.3</version>
 	</parent>
 
 	<properties>
+		<stjs.version>3.3.0</stjs.version>
 	</properties>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.st-js</groupId>
 			<artifactId>shared</artifactId>
-			<version>3.0.3</version>
+			<version>${stjs.version}</version>
+		</dependency>
+
+		<dependency>
+		    <groupId>org.webjars</groupId>
+		    <artifactId>requirejs</artifactId>
+		    <version>2.1.20</version>
 		</dependency>
 	</dependencies>
-	
-	<build>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<!-- The combination of the release plugin 2.4 and maven 3.0.x -->
-					<!-- has a severe bug on release:prepare. -->
-					<!-- see: https://jira.codehaus.org/browse/MRELEASE-812 -->
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-release-plugin</artifactId>
-					<version>2.5</version>
-				</plugin>
-			</plugins>
-		</pluginManagement>
-	</build>
 
 	<scm>
 		<connection>scm:git:https://github.com/st-js/requirejs-bridge.git</connection>
 		<developerConnection>scm:git:https://github.com/st-js/requirejs-bridge.git</developerConnection>
 		<url>scm:git:https://github.com/st-js/requirejs-bridge</url>
-	  <tag>HEAD</tag>
+		<tag>HEAD</tag>
   	</scm>
 
 </project>
